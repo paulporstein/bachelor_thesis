@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Settings</class>
+ <widget class="QWidget" name="Form_Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>280</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>280</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="btn_reset">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>261</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zurücksetzen</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="slider_d_max">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-5</number>
+   </property>
+   <property name="maximum">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_d_max">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>261</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_information_urs">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>241</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Information über Iteration anzeigen</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>251</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Chalkboard SE</family>
+     <pointsize>27</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#0066cc</string>
+   </property>
+   <property name="text">
+    <string>URS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>251</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Chalkboard SE</family>
+     <pointsize>27</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#0066cc</string>
+   </property>
+   <property name="text">
+    <string>Plotten</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_annotate_members">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>251</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stäbe beschriften</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_annotate_nodes">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>251</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Knoten beschriten</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_annotate_q">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>251</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Kraftdichten anzeigen</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_forces">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>261</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>äußere Belastung anzeigen</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_annotate_alr">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>261</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Auflagerreaktionen anzeigen</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_axes_equal">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>261</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gleicher Maßstab der Achsen</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="slider_steps_abbruch">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>50</number>
+   </property>
+   <property name="maximum">
+    <number>500</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_steps_abbruch">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>261</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
