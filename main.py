@@ -163,6 +163,7 @@ class MainWindow(QDialog):
     """
 
     def start_formfinding(self):
+        widget_abbruch.hide()
         #Daten von den Reglern für q bzw. N abfragen, falls was geändert
         for j in range (0,np.shape(self.C_s)[0]):
             self.vorgabe[j]=self.spin_box[j].value()
@@ -652,6 +653,7 @@ class information_urs(QDialog):
                 n_i.append(list_steps[i][3][member]*l_i[member])
         for j in range (1,len(n_i)):
             n_diff.append(n_i[j]-n_i[j-1])
+        n_i=[float(n_i_i) for n_i_i in n_i]
         n_diff_soll=abs(n_i-mainwindow.vorgabe[member])
         plt.figure("steps_plot_q")
         plt.plot(np.arange(len(list_steps)),q_n)
